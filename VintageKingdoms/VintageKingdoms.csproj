@@ -56,14 +56,8 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Content Include="modicon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-  </Content>
-</ItemGroup>
-
-<ItemGroup>
-  <Folder Include="src\client\" />
-  <Folder Include="src\server\" />
+  <Folder Include="Client\" />
+  <Folder Include="Server\" />
 </ItemGroup>
 
 </Project>

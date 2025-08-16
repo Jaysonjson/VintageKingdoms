@@ -1,0 +1,120 @@
+{
+  "code": "ore",
+  "blockmaterial": "Ore",
+  "class": "BlockOre",
+  "attributes": {
+    "mapColorCode": "land",
+    "propickable": true,
+    "handbook": {
+      "groupBy": [ "ore-*-{type}-*" ],
+      "searchWeightOffset": -0.25
+    }
+  },
+  "behaviors": [
+    { "name": "BreakIfFloating" },
+    { "name": "UnstableRock" }
+  ],
+  "variantgroups": [
+    {
+      "code": "grade",
+      "states": [ "poor", "medium", "rich"]
+    },
+    {
+      "code": "type",
+      "states": [ "cobaltite" ]
+    },
+    {
+      "code": "rock",
+      "states": [ "granite", "slate", "phyllite" ]
+    }
+  ],
+  "allowedVariants": [
+    "ore-poor-cobaltite-granite",
+    "ore-medium-cobaltite-granite",
+    "ore-rich-cobaltite-granite",
+
+    "ore-poor-cobaltite-phyllite",
+    "ore-medium-cobaltite-phyllite",
+
+    "ore-poor-cobaltite-slate"
+  ],
+  "creativeinventory": {
+    "general": [
+      "ore-poor-cobaltite-granite",
+      "ore-medium-cobaltite-granite",
+      "ore-rich-cobaltite-granite",
+      "ore-poor-cobaltite-phyllite",
+      "ore-medium-cobaltite-phyllite",
+      "ore-poor-cobaltite-slate"
+    ],
+    "terrain": [
+      "ore-poor-cobaltite-granite",
+      "ore-medium-cobaltite-granite",
+      "ore-rich-cobaltite-granite",
+      "ore-poor-cobaltite-phyllite",
+      "ore-medium-cobaltite-phyllite",
+      "ore-poor-cobaltite-slate"
+    ]
+  },
+  "storageFlags": 5,
+  "shape": { "base": "game:block/basic/cube" },
+  "drawtype": "cube",
+  "textures": {
+    "all": {
+      "base": "game:block/stone/rock/{rock}1",
+      "overlays": [ "block/stone/ore/{type}1" ],
+      "alternates": [
+        {
+          "base": "game:block/stone/rock/{rock}1",
+          "overlays": [ "block/stone/ore/{type}2" ]
+        },
+        {
+          "base": "game:block/stone/rock/{rock}1",
+          "overlays": [ "block/stone/ore/{type}3" ]
+        }
+      ]
+    }
+  },
+  "replaceable": 100,
+  "resistance": 8,
+  "sounds": {
+    "walk": "walk/stone",
+    "byTool": {
+      "Pickaxe": {
+        "hit": "block/rock-hit-pickaxe",
+        "break": "block/rock-break-pickaxe"
+      }
+    }
+  },
+  "requiredMiningTierByType": {
+    "ore-*-cobalite-*": 4
+  },
+  "dropsByType": {
+    "*": [
+      {
+        "type": "item",
+        "code": "vintagekingdoms:ore-{grade}-{type}-{rock}",
+        "quantity": {
+          "avg": 1,
+          "var": 0
+        }
+      }
+    ]
+  },
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldRightReadyAnimation": "heldblockready",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
+    "scale": 0.4
+  }
+}

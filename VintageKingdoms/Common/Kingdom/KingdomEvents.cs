@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VintageKingdoms.Kingdom
+namespace VintageKingdoms.Common
 {
     public static class KingdomEvents
     {
-       public static event Action<Common.Kingdom> EventKingdomCreated;
+       public static event KingdomDelegate EventKingdomCreated;
 
 
        public static void FireKingdomCreated(Common.Kingdom kingdom)

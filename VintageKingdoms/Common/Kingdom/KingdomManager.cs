@@ -6,7 +6,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VintageKingdoms.Kingdom;
 using VintageKingdoms.Network;
 using Vintagestory.API.Common;
 using Vintagestory.API.Util;
