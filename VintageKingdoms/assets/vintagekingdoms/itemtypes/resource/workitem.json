@@ -4,7 +4,7 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "cobaltite" ]
+      "loadFromProperties": "vintagekingdoms:block/metal"
     }
   ],
   "texture": { "base": "block/metal/ingot/{metal}" },

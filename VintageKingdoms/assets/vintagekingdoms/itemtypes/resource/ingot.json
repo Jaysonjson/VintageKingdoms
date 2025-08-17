@@ -7,7 +7,7 @@
       "name": "GroundStorable",
       "properties": {
         "layout": "Stacking",
-        "placeRemoveSound": "sounds/block/ingot",
+        "placeRemoveSound": "game:sounds/block/ingot",
         "stackingModelByType": {
           "*-gold": "block/metal/ingotpileshiny",
           "*": "block/metal/ingotpile"

@@ -21,7 +21,7 @@
   "variantgroups": [
     {
       "code": "ore",
-      "states": [ "cobaltite" ]
+      "loadFromProperties": "vintagekingdoms:block/ore-graded"
     }
   ],
   "shape": { "base": "game:item/nugget" },

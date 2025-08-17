@@ -10,10 +10,10 @@
       "searchWeightOffset": -0.25
     },
     "metalUnitsByType": {
-      "ore-poor-cobaltite-*": 5,
-      "ore-medium-cobaltite-*": 10,
-      "ore-rich-cobaltite-*": 15,
-      "ore-bountiful-cobaltite-*": 20
+      "ore-poor-*": 15,
+      "ore-medium-*": 20,
+      "ore-rich-*": 25,
+      "ore-bountiful-*": 35
     },
     "displaycaseable": true,
     "shelvable": true
@@ -25,7 +25,7 @@
     },
     {
       "code": "ore",
-      "states": [ "cobaltite" ]
+      "loadFromProperties": "vintagekingdoms:block/ore-graded"
     },
     {
       "code": "rock",
