@@ -9,8 +9,8 @@
         "layout": "Stacking",
         "placeRemoveSound": "game:sounds/block/ingot",
         "stackingModelByType": {
-          "*-gold": "block/metal/ingotpileshiny",
-          "*": "block/metal/ingotpile"
+          "*-gold": "game:block/metal/ingotpileshiny",
+          "*": "game:block/metal/ingotpile"
         },
         "stackingTextures": {
           "metal": "block/metal/ingot/{metal}"
