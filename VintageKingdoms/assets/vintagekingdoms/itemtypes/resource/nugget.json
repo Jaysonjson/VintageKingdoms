@@ -21,7 +21,7 @@
   "variantgroups": [
     {
       "code": "ore",
-      "loadFromProperties": "vintagekingdoms:block/ore-graded"
+      "loadFromProperties": "vintagekingdoms:block/ore-nugget"
     }
   ],
   "shape": { "base": "game:item/nugget" },
@@ -72,7 +72,7 @@
   },
   "combustiblePropsByType": {
     "*-cobaltite": {
-      "meltingPoint": 1084,
+      "meltingPoint": 1184,
       "meltingDuration": 30,
       "smeltedRatio": 20,
       "smeltedStack": {

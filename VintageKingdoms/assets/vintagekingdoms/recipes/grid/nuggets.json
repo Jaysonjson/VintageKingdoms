@@ -1,0 +1,179 @@
+[
+  {
+    "__comment": "All these recipes are just matching templates. The actual output item and quantity is determined in code in ItemNugget.OnCreatedByCrafting. The quantity is read from the ore attributes from the ore json file",
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:ore-poor-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:ore-medium-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:ore-rich-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:ore-bountiful-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:crystalizedore-poor-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:crystalizedore-medium-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:crystalizedore-rich-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "H\tS",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true
+      },
+      "S": {
+        "type": "item",
+        "name": "ore",
+        "code": "vintagekingdoms:crystalizedore-bountiful-*"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "vintagekingdoms:nugget-cobaltite",
+      "quantity": 1
+    }
+  }
+]

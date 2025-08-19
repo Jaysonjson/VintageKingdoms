@@ -21,11 +21,11 @@
     },
     {
       "code": "type",
-      "states": [ "cobaltite" ]
+      "loadFromProperties": "vintagekingdoms:block/ore-graded"
     },
     {
       "code": "rock",
-      "states": [ "granite", "slate", "phyllite" ]
+      "loadFromProperties": "game:block/rockwithdeposit"
     }
   ],
   "allowedVariants": [
@@ -39,22 +39,8 @@
     "ore-poor-cobaltite-slate"
   ],
   "creativeinventory": {
-    "general": [
-      "ore-poor-cobaltite-granite",
-      "ore-medium-cobaltite-granite",
-      "ore-rich-cobaltite-granite",
-      "ore-poor-cobaltite-phyllite",
-      "ore-medium-cobaltite-phyllite",
-      "ore-poor-cobaltite-slate"
-    ],
-    "terrain": [
-      "ore-poor-cobaltite-granite",
-      "ore-medium-cobaltite-granite",
-      "ore-rich-cobaltite-granite",
-      "ore-poor-cobaltite-phyllite",
-      "ore-medium-cobaltite-phyllite",
-      "ore-poor-cobaltite-slate"
-    ]
+    "general": ["*"],
+    "terrain": ["*"]
   },
   "storageFlags": 5,
   "shape": { "base": "game:block/basic/cube" },

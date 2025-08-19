@@ -1,3 +1,16 @@
 {
-    "hello": "hello world!"
+  "game:ore-cobaltite": "Cobaltite",
+  "item-ingot-cobalt": "Cobalt ingot",
+  "item-nugget-cobaltite": "Nugget (Cobaltite)",
+  "item-metalbit-cobalt": "Cobalt bits",
+  "block-ore-poor-cobaltite-granite": "Cobalt ore",
+  "block-ore-medium-cobaltite-granite": "Cobalt ore",
+  "block-ore-rich-cobaltite-granite": "Cobalt ore",
+  "block-ore-poor-cobaltite-phyllite": "Cobalt ore",
+  "block-ore-medium-cobaltite-phyllite": "Cobalt ore",
+  "block-ore-poor-cobaltite-slate": "Cobalt ore",
+  "block-looseores-cobaltite-granite-free": "Cobalt ore bits",
+  "block-looseores-cobaltite-phyllite-free": "Cobalt ore bits",
+  "block-looseores-cobaltite-slate-free": "Cobalt ore bits"
+
 }

@@ -7,7 +7,7 @@
       "loadFromProperties": "vintagekingdoms:block/metal"
     }
   ],
-  "texture": { "base": "block/metal/ingot/{metal}" },
+  "texture": { "base": "vintagekingdoms:block/metal/ingot/{metal}" },
   "attributes": {
     "onTongTransform": {
       "translation": {
@@ -33,7 +33,7 @@
   "materialDensity": 7000,
   "combustiblePropsByType": {
     "workitem-cobalt": {
-      "meltingPoint": 1084,
+      "meltingPoint": 1184,
       "meltingDuration": 30,
       "smeltedRatio": 1,
       "smeltedStack": {

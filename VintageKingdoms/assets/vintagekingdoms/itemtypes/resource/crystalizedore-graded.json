@@ -1,61 +1,7 @@
 {
-  "code": "ore",
+  "code": "crystalizedore",
   "__comment": "ItemOre is just for displaying the yield in units in the tooltip",
   "class": "ItemOre",
-  "maxstacksize": 64,
-  "storageFlags": 5,
-  "attributes": {
-    "handbook": {
-      "groupBy": [ "ore-{ore}-*" ],
-      "searchWeightOffset": -0.25
-    },
-    "metalUnitsByType": {
-      "ore-poor-cobaltite-*": 15,
-      "ore-medium-cobaltite-*": 20,
-      "ore-rich-cobaltite-*": 25
-    },
-    "displaycaseable": true,
-    "shelvable": true
-  },
-  "variantgroups": [
-    {
-      "code": "grade",
-      "states": [ "poor", "medium", "rich", "bountiful" ]
-    },
-    {
-      "code": "ore",
-      "loadFromProperties": "vintagekingdoms:block/ore-graded"
-    },
-    {
-      "code": "rock",
-      "loadFromProperties": "game:block/rockwithdeposit"
-    }
-  ],
-  "allowedVariants": [
-    "ore-poor-cobaltite-granite",
-    "ore-medium-cobaltite-granite",
-    "ore-rich-cobaltite-granite",
-
-    "ore-poor-cobaltite-phyllite",
-    "ore-medium-cobaltite-phyllite",
-
-    "ore-poor-cobaltite-slate"
-  ],
-  "shape": { "base": "item/ore/{grade}/{ore}" },
-  "textures": {
-    "ore": {
-      "base": "game:block/stone/rock/{rock}1",
-      "overlays": [ "inherit" ]
-    }
-  },
-  "creativeinventory": {
-    "general": [
-      "*"
-    ],
-    "items": [
-      "*"
-    ]
-  },
   "behaviors": [
     {
       "name": "GroundStorable",
@@ -72,6 +18,78 @@
       }
     }
   ],
+  "maxstacksize": 64,
+  "storageFlags": 5,
+  "attributes": {
+    "handbook": {
+      "groupBy": [
+        "*-{ore}-*"
+      ],
+      "groupedName": [
+        "*-{ore}"
+      ],
+      "excludeFromList": true
+    },
+    "metalUnitsByType": {
+      "*-poor-*": 30,
+      "*-medium-*": 40,
+      "*-rich-*": 50,
+      "*-bountiful-*": 70
+    },
+    "displaycaseable": true,
+    "shelvable": true
+  },
+  "variantgroups": [
+    {
+      "code": "grade",
+      "states": [
+        "poor",
+        "medium",
+        "rich",
+        "bountiful"
+      ]
+    },
+    {
+      "code": "ore",
+      "loadFromProperties": "vintagekingdoms:block/ore-graded"
+    },
+    {
+      "code": "rock",
+      "loadFromProperties": "game:block/rockwithdeposit"
+    }
+  ],
+  "allowedVariants": [
+    "crystalizedore-poor-cobaltite-granite",
+    "crystalizedore-medium-cobaltite-granite",
+    "crystalizedore-rich-cobaltite-granite",
+    "crystalizedore-poor-cobaltite-phyllite",
+    "crystalizedore-medium-cobaltite-phyllite",
+    "crystalizedore-poor-cobaltite-slate"
+  ],
+  "shape": {
+    "base": "game:item/ore/crystalized/{grade}"
+  },
+  "textures": {
+    "ore": {
+      "base": "game:block/stone/rock/{rock}1",
+      "overlays": [
+        "block/stone/ore/{ore}1"
+      ]
+    },
+    "crystalByType": {
+      "*": {
+        "base": "item/resource/nugget/{ore}"
+      }
+    }
+  },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ]
+  },
   "fpHandTransform": {
     "translation": {
       "x": 0,

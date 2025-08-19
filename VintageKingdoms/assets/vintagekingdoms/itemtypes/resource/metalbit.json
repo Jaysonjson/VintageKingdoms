@@ -62,7 +62,7 @@
   },
   "combustiblePropsByType": {
     "*-cobalt": {
-      "meltingPoint": 1084,
+      "meltingPoint": 1184,
       "meltingDuration": 30,
       "smeltedRatio": 20,
       "smeltedStack": {

@@ -96,11 +96,11 @@
     "items": [ "*" ]
   },
   "materialDensityByType": {
-    "*-cobalt": 8960
+    "*-cobalt": 9960
   },
   "combustiblePropsByType": {
     "ingot-cobalt": {
-      "meltingPoint": 1084,
+      "meltingPoint": 1184,
       "meltingDuration": 30,
       "smeltedRatio": 1,
       "smeltedStack": {

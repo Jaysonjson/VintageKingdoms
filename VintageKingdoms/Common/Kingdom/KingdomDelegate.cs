@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Vintagestory.API.Common;
 
 namespace VintageKingdoms.Common
 {
-    public delegate void KingdomDelegate(Common.Kingdom kingdom);
+    public delegate void KingdomDelegate(Kingdom kingdom);
+
+    //TODO Implement
+    #nullable enable
+    public delegate void KingdomPlayerDelegate(Kingdom kingdom, IPlayer? player, String playerUid);
 }

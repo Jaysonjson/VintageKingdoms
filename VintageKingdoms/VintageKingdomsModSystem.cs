@@ -3,6 +3,7 @@ using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Server;
+using Vintagestory.GameContent;
 
 namespace VintageKingdoms
 {
@@ -12,6 +13,7 @@ namespace VintageKingdoms
         {
             VKSystems.Common = api;
             VKSystems.Mod = Mod;
+            VKSystems.Harmony.PatchAll();
         }
 
         public override void StartServerSide(ICoreServerAPI api)
@@ -30,6 +32,12 @@ namespace VintageKingdoms
         {
             VKSystems.Client = api;
             Network.VKNetwork.RegisterClient();
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+            VKSystems.Harmony?.UnpatchAll("vintagekingdoms");
         }
 
     }

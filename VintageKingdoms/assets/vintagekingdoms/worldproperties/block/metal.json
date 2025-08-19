@@ -3,12 +3,12 @@
   "variants": [
     {
       "code": "cobalt",
-      "meltPoint": 1084,
+      "meltPoint": 1184,
       "boilPoint": 2562,
-      "density": 8960,
+      "density": 9960,
       "specificHeatCapacity": 0.39,
       "elemental": true,
-      "tier": 1
+      "tier": 2
     }
   ]
 }
