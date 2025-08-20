@@ -33,7 +33,7 @@
   "materialDensity": 7000,
   "combustiblePropsByType": {
     "workitem-cobalt": {
-      "meltingPoint": 1184,
+      "meltingPoint": 1315,
       "meltingDuration": 30,
       "smeltedRatio": 1,
       "smeltedStack": {

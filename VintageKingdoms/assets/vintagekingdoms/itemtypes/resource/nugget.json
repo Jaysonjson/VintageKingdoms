@@ -72,7 +72,7 @@
   },
   "combustiblePropsByType": {
     "*-cobaltite": {
-      "meltingPoint": 1184,
+      "meltingPoint": 1340,
       "meltingDuration": 30,
       "smeltedRatio": 20,
       "smeltedStack": {

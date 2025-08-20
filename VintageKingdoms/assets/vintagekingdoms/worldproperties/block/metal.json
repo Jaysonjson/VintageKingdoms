@@ -3,12 +3,21 @@
   "variants": [
     {
       "code": "cobalt",
-      "meltPoint": 1184,
-      "boilPoint": 2562,
-      "density": 9960,
+      "meltPoint": 1340,
+      "boilPoint": 2927,
+      "density": 8900,
       "specificHeatCapacity": 0.39,
       "elemental": true,
-      "tier": 2
+      "tier": 5
+    },
+    {
+      "code": "cobaltchromium",
+      "meltPoint": 1300,
+      "boilPoint": 2227,
+      "density": 8900,
+      "specificHeatCapacity": 0.39,
+      "elemental": true,
+      "tier": 5
     }
   ]
 }

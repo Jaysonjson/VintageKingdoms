@@ -96,16 +96,25 @@
     "items": [ "*" ]
   },
   "materialDensityByType": {
-    "*-cobalt": 9960
+    "*-cobalt": 8900
   },
   "combustiblePropsByType": {
     "ingot-cobalt": {
-      "meltingPoint": 1184,
+      "meltingPoint": 1340,
       "meltingDuration": 30,
       "smeltedRatio": 1,
       "smeltedStack": {
         "type": "item",
         "code": "ingot-cobalt"
+      }
+    },
+    "ingot-cobaltchromium": {
+      "meltingPoint": 1300,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltedStack": {
+        "type": "item",
+        "code": "ingot-cobaltchromium"
       }
     }
   },
