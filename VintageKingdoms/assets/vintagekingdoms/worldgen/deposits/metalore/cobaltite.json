@@ -1,7 +1,7 @@
 [
   {
     "code": "cobaltite",
-    "triesPerChunk": 40,
+    "triesPerChunk": 7,
     "withOreMap": true,
     "handbookPageCode": "item-nugget-cobaltite",
     "generator": "disc-followsurface",
@@ -23,13 +23,13 @@
       "surfaceBlock": { "code": "vintagekingdoms:looseores-cobaltite-{rock}-free" },
       "radius": {
         "dist": "gaussian",
-        "avg": 4,
-        "var": 4
+        "avg": 6,
+        "var": 6
       },
       "yPosRel": {
         "dist": "uniform",
-        "avg": 0.5,
-        "var": 0.5
+        "avg": 0.2,
+        "var": 0.2
       },
       "gradeDistribution": "RandomPlusDepthBonus",
       "thickness": {
