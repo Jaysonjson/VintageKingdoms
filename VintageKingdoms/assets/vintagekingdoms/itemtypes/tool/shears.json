@@ -1,0 +1,178 @@
+{
+  "code": "shears",
+  "class": "ItemShears",
+  "damagedby": [
+    "blockbreaking",
+    "attacking"
+  ],
+  "tool": "shears",
+  "attributes": {
+    "heldItemPitchFollow": 0.9,
+    "handbook": {
+      "groupBy": [
+        "shears-*"
+      ]
+    },
+    "toolrackTransform": {
+      "translation": {
+        "y": 0.7
+      },
+      "rotation": {
+        "y": 180
+      },
+      "scale": 1.5
+    },
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0,
+        "y": -0.005,
+        "z": 0.035
+      },
+      "rotation": {
+        "x": 26,
+        "y": 88,
+        "z": -87
+      },
+      "scale": 0.88
+    },
+    "onTongTransform": {
+      "translation": {
+        "x": -0.51,
+        "y": -0.49,
+        "z": -0.8
+      },
+      "rotation": {
+        "x": 0,
+        "y": 174,
+        "z": 0
+      }
+    }
+  },
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 1,
+        "ctrlKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+  "variantgroups": [
+    {
+      "code": "metal",
+      "loadFromProperties": "vintagekingdoms:block/metal"
+    }
+  ],
+  "shape": {
+    "base": "game:item/tool/shears"
+  },
+  "heldTpHitAnimation": "shears",
+  "textures": {
+    "metal": {
+      "base": "block/metal/ingot/{metal}"
+    }
+  },
+  "attackpowerbytype": {
+    "shears-cobalt": 3.25,
+    "shears-cobaltchromium": 3.5
+  },
+  "durabilitybytype": {
+    "shears-cobalt": 4500,
+    "shears-cobaltchromium": 9500
+  },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ],
+    "tools": [
+      "*"
+    ]
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -89,
+      "y": 45,
+      "z": 33
+    },
+    "origin": {
+      "x": 0.85,
+      "y": 0.4,
+      "z": 0.48
+    },
+    "scale": 2.5
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": -0.24,
+      "y": 0.1,
+      "z": 0.1
+    },
+    "rotation": {
+      "x": -35,
+      "y": 15,
+      "z": 90
+    },
+    "scale": 2.45
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 3.6
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.95,
+      "y": -0.07,
+      "z": -0.35
+    },
+    "rotation": {
+      "x": -87,
+      "y": -16,
+      "z": -10
+    },
+    "origin": {
+      "x": 0.68,
+      "y": 0,
+      "z": 0.42
+    },
+    "scale": 1
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "code": "wrench",
+  "class": "ItemWrench",
+  "storageFlags": 257,
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 1,
+        "ctrlKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+  "variantgroups": [
+    {
+      "code": "metal",
+      "loadFromProperties": "vintagekingdoms:block/metal"
+    }
+  ],
+  "shape": {
+    "base": "game:item/tool/wrench/{metal}1"
+  },
+  "texturesByType": {
+    "*": {
+      "metal": {
+        "base": "block/metal/ingot/{metal}"
+      },
+      "wood": {
+        "base": "game:item/tool/material/wood"
+      }
+    }
+  },
+  "attributes": {
+    "toolrackTransform": {
+      "translation": {
+        "x": -0.05,
+        "y": -0.65,
+        "z": 0
+      },
+      "rotation": {
+        "x": 180,
+        "y": 1,
+        "z": -1
+      },
+      "scale": 1.5
+    },
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0,
+        "y": 0.05,
+        "z": 0.02
+      },
+      "rotation": {
+        "x": 26,
+        "y": 90,
+        "z": -90
+      },
+      "scale": 0.88
+    },
+    "onTongTransform": {
+      "translation": {
+        "x": -0.85,
+        "y": -1.1,
+        "z": -0.9
+      },
+      "rotation": {
+        "x": 29,
+        "y": 1,
+        "z": -1
+      },
+      "scale": 0.7
+    },
+    "handbook": {
+      "groupBy": [
+        "wrench-*"
+      ]
+    }
+  },
+  "tool": "wrench",
+  "damagedby": [
+    "blockbreaking",
+    "attacking"
+  ],
+  "heldTpHitAnimation": "smithing",
+  "tooltierbytype": {
+    "*-cobalt": 4,
+    "*-cobaltchromium": 5
+  },
+  "durabilitybytype": {
+    "wrench-cobalt": 2100,
+    "wrench-cobaltchromium": 4500
+  },
+  "attackpowerbytype": {
+    "wrench-cobalt": 2.35,
+    "wrench-cobaltchromium": 2.5
+  },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ],
+    "tools": [
+      "*"
+    ]
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0.4,
+      "z": 0
+    },
+    "rotation": {
+      "x": -33,
+      "y": 6,
+      "z": 90
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 2.75
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -58,
+      "y": 46,
+      "z": 8
+    },
+    "origin": {
+      "x": 0.53,
+      "y": 0,
+      "z": 0.48
+    },
+    "scale": 2.6
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 4.5
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.85,
+      "y": -0.68,
+      "z": -0.22
+    },
+    "rotation": {
+      "x": 90,
+      "y": 1,
+      "z": 0
+    },
+    "scale": 0.7
+  }
+}
