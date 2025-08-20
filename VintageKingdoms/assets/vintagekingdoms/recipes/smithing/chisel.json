@@ -1,0 +1,23 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+      "cobalt",
+      "cobaltchromium"
+    ]
+  },
+  "pattern": [
+    [
+      "________###____",
+      "_##########____",
+      "________###____"
+    ]
+  ],
+  "name": "Chisel",
+  "output": {
+    "type": "item",
+    "code": "chisel-{metal}"
+  }
+}

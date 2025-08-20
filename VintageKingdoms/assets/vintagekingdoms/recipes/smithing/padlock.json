@@ -1,0 +1,24 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+      "cobalt",
+      "cobaltchromium"
+    ]
+  },
+  "pattern": [
+    [
+      "_#####_",
+      "####__#",
+      "####__#",
+      "_#####_"
+    ]
+  ],
+  "name": "Padlock",
+  "output": {
+    "type": "item",
+    "code": "padlock-{metal}"
+  }
+}

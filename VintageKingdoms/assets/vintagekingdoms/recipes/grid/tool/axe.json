@@ -1,0 +1,27 @@
+[
+  {
+    "ingredientPattern": "T\tS",
+    "ingredients": {
+      "T": {
+        "type": "item",
+        "code": "axehead-*",
+        "name": "material",
+        "allowedVariants": [
+          "cobalt",
+          "cobaltchromium"
+        ]
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "axe-felling-{material}",
+      "quantity": 1
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+      "cobalt",
+      "cobaltchromium"
+    ]
+  },
+  "pattern": [
+    [
+      "########____",
+      "############",
+      "########____",
+      "########____"
+    ]
+  ],
+  "name": "Cleaver",
+  "output": {
+    "type": "item",
+    "code": "cleaver-{metal}"
+  }
+}

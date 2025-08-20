@@ -1,0 +1,23 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+      "cobalt",
+      "cobaltchromium"
+    ]
+  },
+  "pattern": [
+    [
+      "_____####",
+      "__#######",
+      "#####____"
+    ]
+  ],
+  "name": "Prospecting pickaxe",
+  "output": {
+    "type": "item",
+    "code": "prospectingpickhead-{metal}"
+  }
+}

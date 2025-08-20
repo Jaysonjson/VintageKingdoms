@@ -1,0 +1,25 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+      "cobalt",
+      "cobaltchromium"
+    ]
+  },
+  "pattern": [
+    [
+      "#####____",
+      "#########",
+      "#########",
+      "#########",
+      "#####____"
+    ]
+  ],
+  "name": "Axe",
+  "output": {
+    "type": "item",
+    "code": "axehead-{metal}"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+      "cobalt",
+      "cobaltchromium"
+    ]
+  },
+  "pattern": [
+    [
+      "###########____",
+      "_______########",
+      "____________###"
+    ]
+  ],
+  "name": "Scythe",
+  "output": {
+    "type": "item",
+    "code": "scythehead-{metal}"
+  }
+}

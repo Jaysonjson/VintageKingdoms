@@ -1,0 +1,25 @@
+{
+  "ingredient": {
+    "type": "item",
+    "code": "ingot-*",
+    "name": "metal",
+    "allowedVariants": [
+      "cobalt",
+      "cobaltchromium"
+    ]
+  },
+  "pattern": [
+    [
+      "###########",
+      "#____######",
+      "#__________",
+      "#____######",
+      "###########"
+    ]
+  ],
+  "name": "Shears",
+  "output": {
+    "type": "item",
+    "code": "shears-{metal}"
+  }
+}
