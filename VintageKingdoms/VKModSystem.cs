@@ -1,7 +1,9 @@
-﻿using VintageKingdoms.Common;
+﻿using VintageKingdoms.Client;
+using VintageKingdoms.Common;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
+using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.Client.NoObf;
 using Vintagestory.GameContent;
@@ -22,12 +24,14 @@ namespace VintageKingdoms
             VKSystems.Server = api;
             Network.VKNetwork.RegisterServer();
             VKSystems.KingdomManager = KingdomManager.Load();
+            KingdomCommands.Register();
         }
 
         public override void StartClientSide(ICoreClientAPI api)
         {
             VKSystems.Client = api;
             Network.VKNetwork.RegisterClient();
+            KingdomPlayerNameTag.Init();
         }
 
         public override void Dispose()

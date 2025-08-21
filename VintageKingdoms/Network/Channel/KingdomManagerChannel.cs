@@ -18,11 +18,11 @@ namespace VintageKingdoms.Network.Channel
             return "kingdom_manager";
         }
 
-        public override void ClientHandler(IServerPlayer fromPlayer, KingdomManager packet)
+        public override void ClientMessageHandler(IServerPlayer fromPlayer, KingdomManager packet)
         {
         }
 
-        public override void ServerHandler(KingdomManager packet)
+        public override void ServerMessageHandler(KingdomManager packet)
         {
             VKSystems.KingdomManager = packet;
         }

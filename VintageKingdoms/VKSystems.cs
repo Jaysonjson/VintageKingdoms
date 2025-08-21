@@ -8,6 +8,8 @@ using VintageKingdoms.Common;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
+using Vintagestory.Client.NoObf;
+using Vintagestory.GameContent;
 
 namespace VintageKingdoms
 {

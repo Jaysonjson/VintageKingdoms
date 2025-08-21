@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Vintagestory.API.Common;
+using Vintagestory.API.Common.Entities;
 using Vintagestory.GameContent;
 
 namespace VintageKingdoms.Common
@@ -26,7 +27,15 @@ namespace VintageKingdoms.Common
             {
                 Players.Add(player);
                 VKSystems.KingdomManager.PlayerKingdomCache.Add(player, this);
+                updatePlayerNameTags(player);
             }
+        }
+
+        public void updatePlayerNameTags(string player)
+        {
+            EntityPlayer entityPlayer = VKSystems.Common.World.PlayerByUid(player)?.Entity;
+            //Force Display Update
+            entityPlayer?.GetBehavior<EntityBehaviorNameTag>().SetName(entityPlayer?.GetName());
         }
 
         //@player is the player Uid, not the playername
@@ -34,6 +43,7 @@ namespace VintageKingdoms.Common
         {
             Players.Remove(player);
             VKSystems.KingdomManager.PlayerKingdomCache.Remove(player);
+            updatePlayerNameTags(player);
         }
 
         public void RemovePlayer(EntityPlayer player)

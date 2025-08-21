@@ -5,7 +5,6 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using VintageKingdoms.Common;
-using VintageKingdoms.Network.Packet;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
@@ -20,21 +19,24 @@ namespace VintageKingdoms.Network.Channel
 
         public void RegisterClient()
         {
-            Client = VKSystems.Client.Network.RegisterChannel(Id()).RegisterMessageType(typeof(T)).SetMessageHandler(new NetworkServerMessageHandler<T>(ServerHandler));
+            Client = VKSystems.Client.Network.RegisterChannel(Id()).RegisterMessageType(typeof(T)).SetMessageHandler(new NetworkServerMessageHandler<T>(ServerMessageHandler));
         }
 
         public void RegisterServer()
         {
-            Server = VKSystems.Server.Network.RegisterChannel(Id()).RegisterMessageType(typeof(T)).SetMessageHandler(new NetworkClientMessageHandler<T>(ClientHandler));
+            Server = VKSystems.Server.Network.RegisterChannel(Id()).RegisterMessageType(typeof(T)).SetMessageHandler(new NetworkClientMessageHandler<T>(ClientMessageHandler));
         }
 
         public abstract string Id();
-        public abstract void ClientHandler(IServerPlayer fromPlayer, T packet);
-        public abstract void ServerHandler(T packet);
+
+        //Executed on the Server - Coming from Client to Server
+        public abstract void ClientMessageHandler(IServerPlayer fromPlayer, T packet);
+        //Executed on the Client - Coming from the Server to the Client
+        public abstract void ServerMessageHandler(T packet);
 
         public void ServerBroadcast(T packet)
         {
-            Server?.BroadcastPacket<T>(packet);
+            Server?.BroadcastPacket(packet);
         }
 
         public void ServerSend(T packet, params IServerPlayer[] players)

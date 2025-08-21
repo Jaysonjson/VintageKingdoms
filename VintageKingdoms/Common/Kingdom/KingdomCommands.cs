@@ -46,9 +46,9 @@ namespace VintageKingdoms.Common
             {
                 if (!player.IsInsideKingdom()) return TextCommandResult.Error("You arent in a Kingdom");
                 if (!player.IsMonarch()) return TextCommandResult.Error("Only the Monarch can disband a Kingdom");
-                VKSystems.KingdomManager.Kingdoms.Remove(player.GetKingdom().Id);
+                VKSystems.KingdomManager.Remove(player.GetKingdom().Id);
                 VKSystems.KingdomManager.Save();
-                return TextCommandResult.Success("You have left your Kingdom.");
+                return TextCommandResult.Success("You have disbanded your Kingdom.");
             }
             return TextCommandResult.Error("Could not disband Kingdom");
         }

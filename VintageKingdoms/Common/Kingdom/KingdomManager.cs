@@ -65,7 +65,7 @@ namespace VintageKingdoms.Common
         {
             if (VKSystems.IsClient() && !Kingdoms.ContainsKey(id))
             {
-                KingdomNetwork.RequestKingdomChannel.ClientSend(id);
+                KingdomNetwork.RequestKingdomChannel.ClientSend(new IntegerPacket(id));
             }
             return Kingdoms[id];
         }
@@ -114,6 +114,20 @@ namespace VintageKingdoms.Common
         public bool PlayerIsAlreadyInKingdom(EntityPlayer player)
         {
             return PlayerIsAlreadyInKingdom(player.PlayerUID);
+        }
+
+        public void Remove(int id)
+        {
+            if (Kingdoms.ContainsKey(id))
+            {
+                Kingdom kingdom = Get(id);
+                foreach (string player in kingdom.Players)
+                {
+                    kingdom.updatePlayerNameTags(player);
+                }
+                kingdom.Players.Clear();
+                Kingdoms.Remove(id);
+            }
         }
     }
 }
