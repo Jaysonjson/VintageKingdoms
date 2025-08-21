@@ -65,7 +65,7 @@ namespace VintageKingdoms.Common
         {
             if (VKSystems.IsClient() && !Kingdoms.ContainsKey(id))
             {
-                KingdomNetwork.RequestKingdomChannel.ClientSend(new KingdomRequestPacket(id, VKSystems.Client.World.Player?.PlayerUID));
+                KingdomNetwork.RequestKingdomChannel.ClientSend(new RequestKingdomPacket(id, VKSystems.Client.World.Player?.PlayerUID));
             }
             return Kingdoms[id];
         }
