@@ -23,5 +23,11 @@ namespace VintageKingdoms
         {
             "cobaltite",
         };
+
+
+        public static bool IsClient()
+        {
+            return Common.Side == EnumAppSide.Client;
+        }
     }
 }

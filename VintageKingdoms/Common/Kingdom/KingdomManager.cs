@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VintageKingdoms.Network;
+using VintageKingdoms.Network.Packet;
 using Vintagestory.API.Common;
 using Vintagestory.API.Util;
 
@@ -33,7 +34,7 @@ namespace VintageKingdoms.Common
 
         public void Sync()
         {
-            KingdomNetwork.ServerKingdom?.BroadcastPacket<KingdomManager>(this);
+            KingdomNetwork.KingdomManagerChannel.ServerBroadcast(this);
         }
 
         public Kingdom Create(string name)
@@ -62,6 +63,10 @@ namespace VintageKingdoms.Common
 
         public Kingdom Get(int id)
         {
+            if (VKSystems.IsClient() && !Kingdoms.ContainsKey(id))
+            {
+                KingdomNetwork.RequestKingdomChannel.ClientSend(new KingdomRequestPacket(id, VKSystems.Client.World.Player?.PlayerUID));
+            }
             return Kingdoms[id];
         }
 

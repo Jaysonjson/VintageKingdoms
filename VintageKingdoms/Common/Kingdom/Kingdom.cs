@@ -19,7 +19,7 @@ namespace VintageKingdoms.Common
             AddPlayer(player.PlayerUID);
         }
 
-        //NOT THE PLAYERNAME
+        //@player is the player Uid, not the playername
         public void AddPlayer(string player)
         {
             if (!Players.Contains(player))
@@ -29,6 +29,7 @@ namespace VintageKingdoms.Common
             }
         }
 
+        //@player is the player Uid, not the playername
         public void RemovePlayer(string player)
         {
             Players.Remove(player);

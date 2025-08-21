@@ -1,5 +1,7 @@
 {
   "game:ore-cobaltite": "Cobaltite",
+  "game:material-cobalt": "Cobalt",
+  "game:material-cobaltchromium": "Cobaltchromium",
   "item-ingot-cobalt": "Cobalt ingot",
   "item-nugget-cobaltite": "Nugget (Cobaltite)",
   "item-metalbit-cobalt": "Cobalt bits",
