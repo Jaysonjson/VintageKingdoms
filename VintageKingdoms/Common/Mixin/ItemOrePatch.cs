@@ -1,19 +1,13 @@
 ﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Reflection.Emit;
 using System.Text;
-using System.Threading.Tasks;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
-using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 
 namespace VintageKingdoms.Common.Mixin
 {
+    //Replaced with @VKItemOre
     [HarmonyPatch(typeof(ItemOre), "GetHeldItemInfo")]
     public class ItemOrePatch
     {

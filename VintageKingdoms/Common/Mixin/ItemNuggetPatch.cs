@@ -11,6 +11,7 @@ using Vintagestory.GameContent;
 
 namespace VintageKingdoms.Common.Mixin
 {
+    //Replaced with @VKItemNugget
     [HarmonyPatch(typeof(ItemNugget), "OnCreatedByCrafting")]
     public class ItemNuggetPatch
     {

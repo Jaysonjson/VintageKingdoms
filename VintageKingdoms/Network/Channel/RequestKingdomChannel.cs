@@ -20,8 +20,8 @@ namespace VintageKingdoms.Network.Channel
 
         public override void ClientMessageHandler(IServerPlayer fromPlayer, IntegerPacket packet)
         {
-            if (!VKSystems.KingdomManager.Kingdoms.ContainsKey(packet.Integer)) return;
-            KingdomNetwork.KingdomChannel.ServerSend(VKSystems.KingdomManager.Get(packet.Integer), fromPlayer);
+            if (!VKSystems.KingdomManager.Kingdoms.ContainsKey(packet.Data)) return;
+            KingdomNetwork.KingdomChannel.ServerSend(VKSystems.KingdomManager.Get(packet.Data), fromPlayer);
         }
 
         public override void ServerMessageHandler(IntegerPacket packet)

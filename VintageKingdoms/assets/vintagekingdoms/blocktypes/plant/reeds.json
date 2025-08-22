@@ -1,0 +1,352 @@
+{
+  "code": "tallplant",
+  "class": "BlockReeds",
+  "entityClassByType": {
+    "*-harvested-*": "Transient"
+  },
+  "attributes": {
+    "climateColorMapForMap": "climatePlantTint",
+    "seasonColorMapForMap": "seasonalFoliage",
+    "transientPropsByType": {
+      "tallplant-coopersreed-*": {
+        "convertFrom": "*-harvested-{cover}",
+        "convertTo": "tallplant-coopersreed-land-normal-{cover}",
+        "inGameHours": "168",
+        "resetBelowTemperature": -4,
+        "stopBelowTemperature": 2
+      },
+      "tallplant-papyrus-*": {
+        "convertFrom": "*-harvested-{cover}",
+        "convertTo": "tallplant-papyrus-land-normal-{cover}",
+        "inGameHours": "132",
+        "resetBelowTemperature": 4,
+        "stopBelowTemperature": 6
+      },
+      "tallplant-tule-*": {
+        "convertFrom": "*-harvested-{cover}",
+        "convertTo": "tallplant-tule-land-normal-{cover}",
+        "inGameHours": "168",
+        "resetBelowTemperature": 0,
+        "stopBelowTemperature": 4
+      },
+      "tallplant-brownsedge-*": {
+        "convertFrom": "*-harvested-{cover}",
+        "convertTo": "tallplant-brownsedge-land-normal-{cover}",
+        "inGameHours": "132",
+        "resetBelowTemperature": -4,
+        "stopBelowTemperature": 2
+      }
+    },
+    "maxWaterDepthByType": {
+      "tallplant-sugarcane-*": 1
+    }
+  },
+  "allowedVariants": [
+    "*-land-*"
+  ],
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "sugarcane"
+      ]
+    },
+    {
+      "code": "habitat",
+      "states": [
+        "land",
+        "water",
+        "ice"
+      ]
+    },
+    {
+      "code": "state",
+      "states": [
+        "normal",
+        "harvested"
+      ]
+    },
+    {
+      "code": "cover",
+      "states": [
+        "free",
+        "snow"
+      ]
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*-land-normal-free"
+    ],
+    "flora": [
+      "*-land-normal-free"
+    ]
+  },
+  "shapeByType": {
+    "tallplant-sugarcane-land-normal-*": {
+      "base": "game:block/plant/reedpapyrus/tule",
+      "alternates": [
+        {
+          "base": "game:block/plant/reedpapyrus/tule-tufts",
+          "rotateY": 15
+        },
+        {
+          "base": "game:block/plant/reedpapyrus/tule-tufts"
+        }
+      ]
+    },
+    "tallplant-sugarcane-land-harvested-*": {
+      "base": "game:block/plant/reedpapyrus/tule",
+      "alternates": [
+        {
+          "base": "game:block/plant/reedpapyrus/tule",
+          "rotateY": 15
+        },
+        {
+          "base": "game:block/plant/reedpapyrus/tule"
+        }
+      ]
+    }
+  },
+  "lod2shapeByType": {
+    "tallplant-sugarcane-*": {
+      "base": "game:block/plant/reedpapyrus/tule-lod2"
+    }
+  },
+  "drawtypeByType": {
+    "*-snow": "JSONAndSnowLayer",
+    "*": "JSON"
+  },
+  "renderpass": "OpaqueNoCull",
+  "matterstate": "solid",
+  "blockmaterial": "plant",
+  "faceCullMode": "NeverCull",
+  "randomDrawOffset": true,
+  "randomizeRotations": true,
+  "texturesByType": {
+    "tallplant-sugarcane-*": {}
+  },
+  "climateColorMapByType": {
+    "tallplant-brownsedge-land-*": "climateDarkerPlantTint"
+  },
+  "seasonColorMapByType": {
+    "tallplant-brownsedge-land-*": "seasonalFoliage"
+  },
+  "sideopaqueByType": {
+    "*-snow": {
+      "all": false,
+      "down": true
+    },
+    "*": {
+      "all": false
+    }
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "emitsideao": {
+    "all": false
+  },
+  "sideao": {
+    "all": true
+  },
+  "replaceable": 3000,
+  "lightAbsorption": 0,
+  "resistance": 1,
+  "collisionbox": null,
+  "selectionboxByType": {
+    "tallplant-brownsedge-land-normal-*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0,
+      "x2": 1,
+      "y2": 1,
+      "z2": 1
+    },
+    "tallplant-brownsedge-land-harvested-*": {
+      "x1": 0.25,
+      "y1": 0,
+      "z1": 0.25,
+      "x2": 0.75,
+      "y2": 0.25,
+      "z2": 0.75
+    },
+    "*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0,
+      "x2": 1,
+      "y2": 1.125,
+      "z2": 1
+    }
+  },
+  "guitransform": {
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  },
+  "sounds": {
+    "place": "game:block/plant",
+    "break": "game:block/plant",
+    "hit": "game:block/plant"
+  },
+  "rainPermeableByType": {
+    "*-land-*": true
+  },
+  "materialDensity": 200,
+  "frostable": true,
+  "combustibleProps": {
+    "burnTemperature": 600,
+    "burnDuration": 10
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": -1.5,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 1.2,
+      "z": 0.5
+    },
+    "scale": 0.65
+  },
+  "dropsByType": {
+    "*sugarcane-*-harvested-*": [
+      {
+        "type": "item",
+        "code": "sugarcaneroot"
+      }
+    ],
+    "tallplant-sugarcane-land-normal-*": [
+      {
+        "type": "item",
+        "code": "sugarcane"
+      }
+    ]
+  },
+  "guiTransformByType": {
+    "tallplant-brownsedge-*": {
+      "rotate": true,
+      "translation": {
+        "x": 0,
+        "y": 2.8,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.3,
+        "z": 0.5
+      },
+      "scale": 2.08
+    },
+    "*": {
+      "rotate": true,
+      "translation": {
+        "x": 0,
+        "y": -1.5,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1.2,
+        "z": 0.5
+      },
+      "scale": 0.65
+    }
+  },
+  "tpHandTransformByType": {
+    "tallplant-tule-*-harvested-free": {
+      "translation": {
+        "x": -1,
+        "y": -0.2,
+        "z": -0.6
+      },
+      "rotation": {
+        "x": 17,
+        "y": -173,
+        "z": 68
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.2,
+        "z": 0.5
+      },
+      "scale": 0.61
+    },
+    "tallplant-brownsedge-*-harvested-free": {
+      "translation": {
+        "x": -1,
+        "y": -0.2,
+        "z": -0.6
+      },
+      "rotation": {
+        "x": 17,
+        "y": -173,
+        "z": 68
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.2,
+        "z": 0.5
+      },
+      "scale": 0.61
+    }
+  },
+  "groundTransformByType": {
+    "tallplant-tule-*-harvested-free": {
+      "translation": {
+        "x": -1,
+        "y": 0.1,
+        "z": -0.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.2,
+        "z": 0.5
+      },
+      "scale": 3
+    },
+    "tallplant-brownsedge-*-harvested-free": {
+      "translation": {
+        "x": -1,
+        "y": 0.15,
+        "z": -0.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.2,
+        "z": 0.5
+      },
+      "scale": 4
+    }
+  }
+}

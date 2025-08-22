@@ -8,14 +8,10 @@ using System.Threading.Tasks;
 namespace VintageKingdoms.Network.Packet
 {
     [ProtoContract(ImplicitFields = ImplicitFields.AllPublic)]
-    public class IntegerPacket
+    public class IntegerPacket : SingletonPacket<int>
     {
-        public int Integer;
-
-        public IntegerPacket(int integer)
+        public IntegerPacket(int data) : base(data)
         {
-            this.Integer = integer;
         }
-
     }
 }

@@ -1,7 +1,7 @@
 {
   "code": "nugget",
   "__comment": "ItemNugget is just for displaying the yield in units in the tooltip",
-  "class": "ItemNugget",
+  "class": "VKItemNugget",
   "behaviors": [
     {
       "name": "GroundStorable",

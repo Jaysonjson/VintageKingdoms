@@ -1,5 +1,6 @@
 ﻿using VintageKingdoms.Client;
 using VintageKingdoms.Common;
+using VintageKingdoms.Common.Items;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
@@ -17,6 +18,9 @@ namespace VintageKingdoms
             VKSystems.Common = api;
             VKSystems.Mod = Mod;
             VKSystems.Harmony.PatchAll();
+            api.RegisterItemClass("VKItemNugget", typeof(VKItemNugget));
+            api.RegisterItemClass("VKItemOre", typeof(VKItemOre));
+            api.RegisterItemClass("ItemSugarCaneRoot", typeof(ItemSugarCaneRoot));
         }
 
         public override void StartServerSide(ICoreServerAPI api)
